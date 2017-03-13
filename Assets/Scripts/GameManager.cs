@@ -184,14 +184,14 @@ namespace Assets.Scripts
                 if (Difficulty == 0)
                 {
                     // easy has been selected, use dumb AI
-                    GonkDroidAI gonkDroidAI = Server.gameObject.AddComponent<GonkDroidAI>();
-                    gonkDroidAI.Init(Server.IpAddress);
+                    ArtificialInelegance ArtificialInelegance = Server.gameObject.AddComponent<ArtificialInelegance>();
+                    ArtificialInelegance.Init(Server.IpAddress);
                 }
                 else
                 {
                     // hard has been selected. use intelligent AI
-                    SithAI sithAI = Server.gameObject.AddComponent<SithAI>();
-                    sithAI.Init(Server.IpAddress);
+                    ProbotAI ProbotAI = Server.gameObject.AddComponent<ProbotAI>();
+                    ProbotAI.Init(Server.IpAddress);
                 }
 
                 Client = gameObject.AddComponent<Client>();
@@ -208,13 +208,13 @@ namespace Assets.Scripts
         {
             if (Server != null)
             {
-                var ai = Server.gameObject.GetComponent<GonkDroidAI>();
+                var ai = Server.gameObject.GetComponent<ArtificialInelegance>();
                 if (ai != null)
                 {
                     ai.NetClient.Shutdown();
                     Destroy(ai);
                 }
-                var ai2 = Server.gameObject.GetComponent<SithAI>();
+                var ai2 = Server.gameObject.GetComponent<ProbotAI>();
                 if (ai2 != null)
                 {
                     ai2.NetClient.Shutdown();
@@ -298,7 +298,7 @@ namespace Assets.Scripts
 
         public void StartGame()
         {
-            SceneManager.LoadScene("dejarik");
+            SceneManager.LoadScene("HoloChess");
         }
 
     }

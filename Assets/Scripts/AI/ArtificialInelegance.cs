@@ -9,7 +9,7 @@ using Random = System.Random;
 
 namespace Assets.Scripts.AI
 {
-    class GonkDroidAI : Client
+    class ArtificialInelegance : Client
     {
         private readonly Random _random = new Random();
         private Dictionary<int, int> _friendlyMonsterState = new Dictionary<int, int>();
@@ -22,7 +22,7 @@ namespace Assets.Scripts.AI
             //DontDestroyOnLoad(this);
 
             IsHost = true;
-            ClientName = "Gonk Droid AI";
+            ClientName = "ArtificialInelegance AI";
            
         }
 
@@ -52,7 +52,7 @@ namespace Assets.Scripts.AI
 
                 NetClient.Connect(ipAddress, 1300);
 
-                Debug.Log("Gonk Droid AI");
+                Debug.Log("ArtificialInelegance AI");
 
             }
             catch (Exception e)

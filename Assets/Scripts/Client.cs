@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.MessageModels;
-using DejarikLibrary;
+using HoloChessLibrary;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -357,7 +357,7 @@ namespace Assets.Scripts
 
         IEnumerator LoadGameScene()
         {
-            AsyncOperation loadSceneOperation = SceneManager.LoadSceneAsync("dejarik");
+            AsyncOperation loadSceneOperation = SceneManager.LoadSceneAsync("HoloChess");
 
             while (!loadSceneOperation.isDone)
             {

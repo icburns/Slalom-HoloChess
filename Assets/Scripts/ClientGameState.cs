@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Assets.Scripts.MessageModels;
-using DejarikLibrary;
+using HoloChessLibrary;
 using Assets.Scripts.Monsters;
 using Assets.Scripts.SelectionPreview.AttackResultPreview;
 using Random = System.Random;

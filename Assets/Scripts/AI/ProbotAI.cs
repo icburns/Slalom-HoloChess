@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.MessageModels;
-using DejarikLibrary;
+using HoloChessLibrary;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -10,7 +10,7 @@ using Random = System.Random;
 
 namespace Assets.Scripts.AI
 {
-    class SithAI : Client
+    class ProbotAI : Client
     {
         private readonly Random _random = new Random();
         private Dictionary<int, int> _friendlyMonsterState = new Dictionary<int, int>();
@@ -23,7 +23,7 @@ namespace Assets.Scripts.AI
             //DontDestroyOnLoad(this);
 
             IsHost = true;
-            ClientName = "Sith AI";
+            ClientName = "Probot AI";
            
         }
 
@@ -53,7 +53,7 @@ namespace Assets.Scripts.AI
 
                 NetClient.Connect(ipAddress, 1300);
 
-                Debug.Log("Sith AI");
+                Debug.Log("Probot AI");
 
             }
             catch (Exception e)

@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
 using Assets.Scripts.MessageModels;
-using DejarikLibrary;
+using HoloChessLibrary;
 using Assets.Scripts.Monsters.ServerObjects;
 using Newtonsoft.Json;
 using UnityEngine.SceneManagement;

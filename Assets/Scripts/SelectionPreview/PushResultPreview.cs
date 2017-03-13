@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using DejarikLibrary;
+using HoloChessLibrary;
 using UnityEngine;
 
 namespace Assets.Scripts.SelectionPreview.AttackResultPreview

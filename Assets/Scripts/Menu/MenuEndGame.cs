@@ -9,9 +9,9 @@ namespace Assets.Scripts.Menu
         // Use this for initialization
         void Start()
         {
-            if (SceneManager.GetSceneByName("dejarik").isLoaded)
+            if (SceneManager.GetSceneByName("HoloChess").isLoaded)
             {
-                SceneManager.UnloadSceneAsync("dejarik");
+                SceneManager.UnloadSceneAsync("HoloChess");
             }
         }
 

@@ -1,4 +1,4 @@
-﻿using DejarikLibrary;
+﻿using HoloChessLibrary;
 
 namespace Assets.Scripts.Monsters.ServerObjects
 {

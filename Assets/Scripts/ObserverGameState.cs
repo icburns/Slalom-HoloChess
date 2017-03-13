@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
-using DejarikLibrary;
+using HoloChessLibrary;
 using Assets.Scripts.Monsters;
 using Random = System.Random;
 
